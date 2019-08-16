@@ -1,0 +1,40 @@
+//To control the beaglebone Black GPIO pins mannual from terminal 
+
+//we can access the beaglebone Black GPIO pins by three ways 
+
+1. Physical Pin name 
+ eg: - PX_Y  (eg P9_12)
+
+2. By gpio name 
+eg: - GPIOX_Y (eg GPIO1_12)
+
+3. By GPIO number 
+eg: - 32*X+Y  (eg P9_12 = 60)
+
+Example: -
+//setting the Pin P9_12 by value 
+
+//be a root 
+    sudo su
+
+//Go to the GPIO 
+
+  cd /sys/class/gpio
+
+  echo "pin number" > export 
+eg 
+  echo 60 > export 
+
+  cd gpio60
+
+ echo "set direction" > direction
+eg 
+  echo out > direction
+  echo in > direction
+ 
+//To see the present value of pin 
+  cat value 
+
+//to set the value of the pin 
+  echo 1 > value
+
