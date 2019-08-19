@@ -1,5 +1,6 @@
 #!/bin/bash 
-#gave 2 arugments with file line eg [./gpio_pins <pin_number> <value>] eg[ ./gpio_pins 60 1]
+#gave 2 arugments with file line eg [./gpio_pins <pin_number> <value>] 
+#eg[ ./gpio_pins 60 1]
 argument=$#
 if [ "$argument" -ne 2 ]
 then 
