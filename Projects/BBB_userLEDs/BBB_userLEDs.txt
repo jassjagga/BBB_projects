@@ -10,7 +10,7 @@
 
 cd /sys/devices/platform/leds/leds
 
-//like if i want to turn on and of the usr3 LED i can do this like this
+//like if I want to turn on and off the usr3 LED I can do this like this
  
 //going to the usr3 directory 
 cd /sys/devices/platform/leds/leds/beaglebone:green:usr3
