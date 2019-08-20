@@ -1,0 +1,30 @@
+//In beaglebone black 
+
+//User LED - usr0
+           - usr1
+           - usr2
+           - usr3
+
+// we can control these leds directly from the linux terminal 
+//at this address we can see the leds s
+
+cd /sys/devices/platform/leds/leds
+
+//like if i want to turn on and of the usr3 LED i can do this like this
+ 
+//going to the usr3 directory 
+cd /sys/devices/platform/leds/leds/beaglebone:green:usr3
+
+//there is a one file name brightness which will turn holds the status of LED
+//we can check by just read the file like
+
+cat brightness
+
+//it will show the result like 0 means led is off while 1 means led is one 
+//we can turn on the led by just echo the value to file like this 
+
+echo 1 > brightness  //turn on the usr3 LED ON 
+
+whiile 
+
+ehco 0 > brightness  //turn off the usr3 LED OFF 
