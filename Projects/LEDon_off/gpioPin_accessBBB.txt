@@ -26,7 +26,9 @@ eg
   echo 60 > export 
 
   cd gpio60
-
+//when we change it to out the pin is ready to output ( example like a connected LED will ready to start when value is change 
+  to one
+  
  echo "set direction" > direction
 eg 
   echo out > direction
@@ -34,7 +36,7 @@ eg
  
 //To see the present value of pin 
   cat value 
-
+//by changing the value we can turn on or off the connected LED 
 //to set the value of the pin 
   echo 1 > value
 
